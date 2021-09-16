@@ -9,6 +9,6 @@ public interface CuentaService {
     Cuenta findById(Long id);
     int revisarTotalTransferencia(Long idBank);
     BigDecimal revisarSaldo(Long idCuenta);
-    void transferir(Long numeroCuentaOrigen, Long numeroCuentaDestino, BigDecimal monto);
+    void transferir(Long numeroCuentaOrigen, Long numeroCuentaDestino, BigDecimal monto, Long idBank);
 
 }
